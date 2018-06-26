@@ -21,7 +21,7 @@ secureRouter.post(rutas[0].ruta,(req,res,next)=>{
             let args={
                 form: { data: peticion } 
             }
-            _router.api.post({url:api[0].host+'/'+peticion.uu+'/'+peticion.u,args:args}).then((api)=>{
+            _router.api.post({url:api+'/'+peticion.uu+'/'+peticion.u,args:args}).then((api)=>{
                 if(api.err==null){
                     _router.api.sendProd({ req: req, res: res, code: 200, respuesta: api.body });
                 }else{
