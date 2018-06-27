@@ -24,5 +24,9 @@
     "node-rest-client": "^3.1.0",
     "nodemailer": "^4.6.4",
     "request": "^2.85.0"
+  },
+  "engines": {
+    "node": "6.10.0",
+    "npm": "3.10.10"
   }
 }
